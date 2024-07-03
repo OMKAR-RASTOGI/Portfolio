@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omkar Rastogi - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <h1>Omkar Rastogi</h1>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home" class="hero" >
+        <div class="hero-content" >
+            <h2 class="typing-animation">Hello, I'm Omkar Rastogi</h2>
+            <p class="fade-in">A passionate developer specializing in Python and Django.</p>
+        </div>
+    </section>
+
+    <section id="about" class="fade-in">
+        <div class="container">
+            <h2 class="typing-animation">About Me</h2>
+            <p>Hello, I'm Omkar Rastogi. I recently graduated with a degree in Computer Science where I developed a strong foundation in Python programming, software development, and problem-solving. During my academic career, I completed various projects using Python, including an School Management System website and  frontend applications. These projects enhanced my understanding of object-oriented programming, data structures, and algorithms. Additionally, I have a keen interest in learning new technologies and methodologies to enhance my skills and strength.</p>
+        </div>
+    </section>
+    <section id="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skills-container">
+                <div class="skill">
+                    <h3>Python</h3>
+                </div>
+                <div class="skill">
+                    <h3>Django</h3>
+                </div>
+                <div class="skill">
+                    <h3>DRF API</h3>
+                </div>
+                <div class="skill">
+                    <h3>HTML</h3>
+                </div>
+                <div class="skill">
+                    <h3>CSS</h3>
+                </div>
+                <div class="skill">
+                    <h3>Bootstrap</h3>
+                </div>
+                <div class="skill">
+                    <h3>Git</h3>
+                </div>
+                <div class="skill">
+                    <h3>GitHub</h3>
+                </div>
+                <div class="skill">
+                    <h3>MySQL</h3>
+                </div>
+                <div class="skill">
+                    <h3>SQLite</h3>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="projects-container">
+                <div class="project">
+                    <h3>School Management System</h3>
+                    <p>
+                        <ul>
+                            <li>
+                                Adding Login page and Sign Up page.
+                            </li>
+                            <li>
+                                Three users student,teacher and admin are present.
+                            </li>
+                            <li>
+                                Performed CRUD Operation.
+                            </li>
+                            <li>
+                                Feature of Uploading Notes and Assignments.
+                            </li>
+                            <li>
+                                HTML, CSS, JS, Bootstrap are used for frontend.
+                            </li>
+                            <li>
+                                Django Framework is used for backend.
+                            </li>
+                            <li>
+                                Use of DJango ORM.
+                            </li>
+
+                        </ul>
+                    </p>
+                </div>
+                <div class="project">
+                    <h3>Dynamic News Website</h3>
+                    <p><ul>
+                        <li>
+                            Adding Login page and Register page.
+                        </li>
+                        <li> 
+                            Dynamic News are available on website.
+                        </li>
+                        <li>
+                            Performed CRUD Operation.
+                        </li>
+                        <li>
+                            HTML, CSS, JS, Bootstrap are used for frontend.
+                        </li>
+                        <li>
+                            Django Framework is used for backend.
+                        </li>
+
+                    </ul></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <h3>Email</h3>
+                    <a href="mailto:omkarrastogi15@gmail.com">omkarrastogi15@gmail.com</a>
+                </div>
+                <div class="contact-item">
+                    <h3>LinkedIn</h3>
+                    <a href="https://www.linkedin.com/in/omkar-rastogi-9b8610253/" target="_blank"> Omkar Rastogi</a>
+                </div>
+                <div class="contact-item">
+                    <h3>Phone</h3>
+                    <p>+91 9554552145</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  
+
+    <script>
+        // JavaScript for smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
