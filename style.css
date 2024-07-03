@@ -7,7 +7,7 @@
 }
 
 html {
-    scroll-behavior: smooth; /* Added for smooth scrolling */
+    scroll-behavior: smooth;
 }
 
 body {
@@ -60,7 +60,6 @@ nav ul li a:hover {
 }
 
 .hero {
-    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -69,14 +68,6 @@ nav ul li a:hover {
     padding: 20px;
     text-align: center;
     color: #FF6F61;
-}
-
-.hero h1 {
-    font-size: 3em;
-    white-space: nowrap;
-    overflow: hidden;
-    border-right: 0.15em solid #FF6F61;
-    animation: typing 4s steps(40, end) infinite, blink 0.75s step-end infinite;
 }
 
 .hero h2 {
@@ -164,9 +155,7 @@ p {
 }
 
 .skill:hover {
-    /* background: #FF6F61;
-    color: #222; */
-    transform: scale(1.1); /* Zoom in effect */
+    transform: scale(1.1);
 }
 
 .projects-container {
@@ -190,7 +179,8 @@ p {
     margin-bottom: 10px;
     color: #FF6F61;
 }
-.project ul{
+
+.project ul {
     padding-left: 20px;
 }
 
@@ -231,4 +221,67 @@ footer {
     margin-top: 40px;
     font-size: 1em;
     color: #fff;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    nav .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul li {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .hero {
+        height: auto;
+        padding: 40px 20px;
+    }
+
+    .hero h2 {
+        font-size: 2em;
+    }
+
+    .skills-container, .projects-container, .contact-info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skill, .project, .contact-item {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .projects-container {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    nav h1 {
+        font-size: 1.8em;
+    }
+
+    nav ul li a {
+        font-size: 1em;
+    }
+
+    .hero h2 {
+        font-size: 1.5em;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    p {
+        font-size: 1em;
+    }
 }
